@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/upcomingbackground"
+        android:background="@drawable/feltbackground">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:background="#80ffffff"
+            android:id="@+id/text1"
+            android:text="This is my first app so I would like to continue working on it and making it better.  Please remember to send any suggestions to julysfire@gmail.com and I will be happy to look into it!"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text2"
+            android:layout_below="@+id/text1"
+            android:textSize="20dp"
+            android:background="#80ffffff"
+            android:text="Some of the things I am currently looking into are as follow:\n"
+            />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:paddingTop="25dp"
+                android:background="#80ffffff"
+                android:text="1. Continuing to add more themes to the theme store as well as adding button themes as well."
+                android:id="@+id/text3"
+                android:layout_below="@id/text2"/>
+            <TextView
+                android:paddingTop="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:id="@+id/text4"
+                android:layout_below="@id/text3"
+                android:background="#80ffffff"
+                android:text="2. I would like to add a highscores table, and possibly add in Google achievements."/>
+            <TextView
+                android:paddingTop="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text5"
+                android:layout_below="@id/text4"
+                android:textSize="20dp"
+                android:background="#80ffffff"
+                android:text="3. I would like to add some sounds, maybe some little notifcations for streaks."/>
+            <TextView
+                android:paddingTop="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text7"
+                android:textSize="20dp"
+                android:layout_below="@+id/text5"
+                android:background="#80ffffff"
+                android:text="4. I am always looking for new ways to improve the look and feel of the app.  Feedback is the best way for me to achieve that! Feel free to email me with suggestions at julysfire@gmail.com!"/>
+        </RelativeLayout>
+    </ScrollView>
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        android:layout_below="@id/text7"
+        ads:adUnitId="ca-app-pub-4179709266227495/6461801972">
+    </com.google.android.gms.ads.AdView>
+</LinearLayout>

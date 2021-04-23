@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.julysfire.hilowgame.hilowgame">
+
+    <!-- Version-->
+    <!-- v1.4 -->
+    <!-- Fixed the level system to have no upper limit -->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Hi Low Game"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.julysfire.hilowgame.hilowgame.UpcomingActivity"
+            android:label="Upcoming Updates"
+            android:parentActivityName="com.julysfire.hilowgame.hilowgame.MainActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".AboutActivity"
+            android:label="Rules"
+            android:parentActivityName="com.julysfire.hilowgame.hilowgame.MainActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.julysfire.hilowgame.hilowgame.StatsActivity"
+            android:label="Stats"
+            android:parentActivityName="com.julysfire.hilowgame.hilowgame.MainActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ThemeStore"
+            android:label="Theme Store"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

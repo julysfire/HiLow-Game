@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/statsbackground"
+        android:background="@drawable/feltbackground">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:paddingTop="0dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:id="@+id/currentPointsLabel"
+                android:text="Current Points"
+                android:gravity="left" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:id="@+id/currentPointsText"
+                android:gravity="right"
+                android:text="Test"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/totalWonLabel"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:gravity="left"
+                android:text="Total Correct"
+                android:layout_below="@+id/currentPointsText"
+                android:paddingTop="25dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/totalWonText"
+                android:gravity="right"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_below="@+id/currentPointsText"
+                android:paddingTop="24dp"
+                android:text="Test"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:id="@+id/totalLostLabel"
+                android:textSize="20dp"
+                android:paddingTop="25dp"
+                android:textStyle="bold"
+                android:text="Total Lost"
+                android:layout_below="@+id/totalWonText"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:paddingTop="24dp"
+                android:id="@+id/totalLostText"
+                android:layout_below="@id/totalWonLabel"
+                android:text="Test"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:gravity="left"
+                android:textStyle="bold"
+                android:id="@+id/winPercLabel"
+                android:text="Win Percentage"
+                android:layout_below="@id/totalLostText"
+                android:paddingTop="25dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:paddingTop="24dp"
+                android:gravity="right"
+                android:id="@+id/winPerc"
+                android:layout_below="@id/totalLostLabel"
+                android:text="Test"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:gravity="left"
+                android:textStyle="bold"
+                android:id="@+id/totHighLabel"
+                android:text="Total Highs"
+                android:layout_below="@id/winPercLabel"
+                android:paddingTop="25dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:gravity="right"
+                android:textStyle="bold"
+                android:id="@+id/totHighText"
+                android:text="Test"
+                android:layout_below="@+id/winPerc"
+                android:paddingTop="24dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:gravity="left"
+                android:textStyle="bold"
+                android:id="@+id/totLowLabel"
+                android:text="Total Lows"
+                android:layout_below="@+id/totHighLabel"
+                android:paddingTop="25dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/totLowText"
+                android:textSize="20dp"
+                android:text="Test"
+                android:paddingTop="24dp"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:layout_below="@+id/totHighText"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:gravity="left"
+                android:id="@+id/totTieLabel"
+                android:textStyle="bold"
+                android:text="Total Ties"
+                android:layout_below="@+id/totLowLabel"
+                android:paddingTop="25dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:gravity="right"
+                android:textStyle="bold"
+                android:id="@+id/totTieText"
+                android:paddingTop="24dp"
+                android:layout_below="@+id/totLowLabel"
+                android:text="Test"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:gravity="left"
+                android:textStyle="bold"
+                android:id="@+id/percHighLabel"
+                android:text="Percentage High"
+                android:layout_below="@+id/totTieLabel"
+                android:paddingTop="25dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:id="@+id/percHighText"
+                android:paddingTop="24dp"
+                android:text="Test"
+                android:layout_below="@id/totTieLabel"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Percentage Low"
+                android:textSize="20dp"
+                android:paddingTop="25dp"
+                android:textStyle="bold"
+                android:id="@+id/percLowLabel"
+                android:layout_below="@id/percHighLabel"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Test"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:paddingTop="24dp"
+                android:id="@+id/percLowText"
+                android:layout_below="@id/percHighLabel"
+                android:gravity="right"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Percentage Tie"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:gravity="left"
+                android:id="@+id/percTieLabel"
+                android:layout_below="@id/percLowText"
+                android:paddingTop="25dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="24dp"
+                android:id="@+id/percTieText"
+                android:textSize="20dp"
+                android:text="Test"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:layout_below="@id/percLowText"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:gravity="left"
+                android:textStyle="bold"
+                android:text="Total Points Won"
+                android:id="@+id/totalpointswonlabel"
+                android:paddingTop="25dp"
+                android:layout_below="@+id/percTieLabel"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:text="Test"
+                android:id="@+id/totalpointswontext"
+                android:paddingTop="24dp"
+                android:layout_below="@+id/percTieLabel"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:gravity="left"
+                android:textStyle="bold"
+                android:text="Total Poinst Lost"
+                android:id="@+id/totalpointslostlabel"
+                android:paddingTop="25dp"
+                android:layout_below="@+id/totalpointswonlabel"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:gravity="right"
+                android:textStyle="bold"
+                android:text="Test"
+                android:id="@+id/totalpointslosttext"
+                android:paddingTop="24dp"
+                android:layout_below="@+id/totalpointswonlabel"/>
+        </RelativeLayout>
+    </ScrollView>
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/totalpointslostlabel"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-4179709266227495/6461801972">
+    </com.google.android.gms.ads.AdView>
+</LinearLayout>

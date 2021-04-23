@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:id="@+id/rulesbackground"
+        android:background="@drawable/feltbackground">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:text="Rules"
+                android:id="@+id/ruleLabel"
+                android:textStyle="bold"
+                android:background="@drawable/feltlayer"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_below="@+id/ruleLabel"
+                android:id="@+id/rulesText"
+                android:background="#80ffffff"
+                android:text="The rules are fairly straightforward.  Each card is given a value, the number cards are given their value, then the face cards have a higher value (Jack = 11, Queen = 12, King = 13) and Aces are wild (think of them as being either above Kings or below 2s).  The objective of the game is to guess what the value of the next card will be, if it will be higher, lower, or the same.  For this game, there are 4 full deck of cards (minus jokers) and drawing cards is completely random based on the cards that have not yet been drawn."/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:textSize="25dp"
+                android:layout_below="@+id/rulesText"
+                android:gravity="center"
+                android:text="Points"
+                android:id="@+id/pointsLabel"
+                android:textStyle="bold"
+                android:background="@drawable/feltlayer"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:background="#80ffffff"
+                android:id="@+id/pointsText"
+                android:layout_below="@+id/pointsLabel"
+                android:text="Points are awarded for correct guesses and taken away for incorrect guesses.  For correct guesses higher or lower, 5 points are added per correct guess.  On streaks 5 and greater, bonus points are awarded.  The reward for streaks is 10 points times the length of the streak, divisble by 5. (10 points for a 5 streak, 20 points for a 10 streak, 30 points for a 15 streak, and so on).  For correct guesses on ties, 20 points is awarded and the same streak points applies as before.  For incorrect guesses, 10 points is taken away.  Points hold no real world value and are only for fun."/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:textSize="25dp"
+                android:background="@drawable/feltlayer"
+                android:id="@+id/questionsLabel"
+                android:layout_below="@id/pointsText"
+                android:gravity="center"
+                android:text="Questions"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:id="@+id/questionText"
+                android:background="#80ffffff"
+                android:layout_below="@+id/questionsLabel"
+                android:text="Questions and feedback can be directed to julysfire@gmail.com."/>
+        </RelativeLayout>
+    </ScrollView>
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        android:background="#80ffffff"
+        ads:adUnitId="ca-app-pub-4179709266227495/6461801972"
+        android:layout_below="@+id/questionText">
+    </com.google.android.gms.ads.AdView>
+</LinearLayout>

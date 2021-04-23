@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.julysfire.hilowgame.hilowgame.MainActivity"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.90"
+        android:id="@+id/backgroundmain"
+        android:background="@drawable/feltbackground">
+
+        <!-- Image views -->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:background="@drawable/back"
+            android:layout_marginBottom="32dp"
+            android:layout_above="@+id/steakTextBorder"
+            android:layout_toRightOf="@+id/steakTextBorder"
+            android:layout_toEndOf="@+id/steakTextBorder" />
+
+        <ImageView
+            android:id="@+id/currentImage"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_alignTop="@+id/drawnImage"
+            android:layout_toLeftOf="@+id/steakText"
+            android:layout_toStartOf="@+id/steakText" />
+        <ImageView
+            android:id="@+id/placeholderCurrentImage"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_alignTop="@+id/drawnImage"
+            android:layout_toLeftOf="@+id/steakText"
+            android:layout_toStartOf="@+id/steakText" />
+
+        <ImageView
+            android:id="@+id/drawnImage"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_alignTop="@+id/drawnImageborder"
+            android:layout_centerHorizontal="true" />
+        <ImageView
+            android:id="@+id/drawnImageborder"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_alignTop="@+id/imageView"
+            android:layout_alignLeft="@+id/drawnImage"
+            android:layout_alignStart="@+id/drawnImage"
+            android:layout_centerHorizontal="true" />
+
+        <!-- Buttons -->
+        <ImageButton
+            android:id="@+id/hiButton"
+            android:layout_width="115dp"
+            android:layout_height="75dp"
+            android:background="@drawable/highbutt"
+            android:textSize="20dp"
+            android:layout_above="@+id/adView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <ImageButton
+            android:id="@+id/tieButton"
+            android:layout_width="115dp"
+            android:layout_height="75dp"
+            android:background="@drawable/even"
+            android:textSize="20dp"
+            android:layout_below="@+id/steakTextBorder"
+            android:layout_centerHorizontal="true" />
+        <ImageButton
+            android:id="@+id/lowButton"
+            android:layout_width="115dp"
+            android:layout_height="75dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/hiButton"
+            android:background="@drawable/low"
+            android:textSize="20dp" />
+
+        <!-- STREAK -->
+        <TextView
+            android:id="@+id/steakTextBorder"
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/lowButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/feltlayer"
+            android:textSize="20dp"
+            android:layout_alignTop="@+id/steakText" />
+        <TextView
+            android:id="@+id/steakTextBorderf"
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/lowButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/border"
+            android:textSize="20dp"
+            android:layout_alignTop="@+id/steakText" />
+        <TextView
+            android:id="@+id/steakText"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/lowButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="12dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Current Streak: 0"
+            android:textSize="20dp"/>
+
+        <!-- Win, lose tie -->
+        <TextView
+            android:id="@+id/winLoseText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:background="#30ffffff"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:id="@+id/winLoseborder"
+            android:layout_width="match_parent"
+            android:background="@drawable/border"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:id="@+id/seperatorText"
+            android:layout_below="@id/winLoseborder"/>
+        <!--Points -->
+        <TextView
+            android:id="@+id/moneyText"
+            android:layout_width="155dp"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:text="Points: 0"
+            android:textSize="23dp"
+            android:textStyle="bold"
+            android:background="@drawable/feltlayer"
+            android:layout_below="@+id/seperatorText"
+            android:layout_toRightOf="@+id/previousCardText"
+            android:layout_alignRight="@+id/steakText"
+            android:layout_alignEnd="@+id/steakText" />
+        <TextView
+            android:id="@+id/moneyTextborder"
+            android:layout_width="155dp"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:background="@drawable/border"
+            android:layout_below="@+id/seperatorText"
+            android:layout_alignLeft="@+id/steakTextBorder"
+            android:layout_alignStart="@+id/steakTextBorder"
+            android:layout_alignRight="@+id/moneyText"
+            android:layout_alignEnd="@+id/moneyText" />
+
+        <!-- Previous Card -->
+        <TextView
+            android:id="@+id/previousCardText"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:paddingLeft="2dp"
+            android:text="Previous\n Card"
+            android:textSize="20dp"
+            android:background="@drawable/feltlayer"
+            android:layout_above="@+id/currentImage"
+            android:layout_toLeftOf="@+id/steakTextBorder"
+            android:layout_toStartOf="@+id/steakTextBorder" />
+        <TextView
+            android:id="@+id/textView2border"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:paddingLeft="2dp"
+            android:background="@drawable/border"
+            android:layout_alignTop="@+id/previousCardText"
+            android:layout_alignLeft="@+id/currentImage"
+            android:layout_alignStart="@+id/currentImage"
+            android:layout_alignRight="@+id/previousCardText"
+            android:layout_alignEnd="@+id/previousCardText"
+            android:layout_above="@+id/currentImage" />
+
+        <!-- Current Card -->
+        <TextView
+            android:id="@+id/currentCardText"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="@drawable/feltlayer"
+            android:text="Current Card"
+            android:textSize="20dp"
+            android:layout_above="@+id/drawnImage"
+            android:layout_alignLeft="@+id/drawnImage"
+            android:layout_alignStart="@+id/drawnImage"
+            android:layout_alignRight="@+id/drawnImage"
+            android:layout_alignEnd="@+id/drawnImage" />
+        <TextView
+            android:id="@+id/textViewborder"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="@drawable/border"
+            android:layout_above="@+id/drawnImage"
+            android:layout_alignRight="@+id/drawnImage"
+            android:layout_alignEnd="@+id/drawnImage" />
+
+        <!--Cards Left -->
+        <TextView
+            android:id="@+id/cardsLeftText"
+            android:layout_width="85dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="Cards Left: 208"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:background="@drawable/feltlayer"
+            android:layout_above="@+id/imageView"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+        <TextView
+            android:id="@+id/cardsLeftborder"
+            android:layout_width="85dp"
+            android:layout_height="50dp"
+            android:background="@drawable/border"
+            android:layout_above="@+id/imageView"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <!-- Level Progress -->
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/steakTextBorder"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/levelBar"
+            android:scaleY="9"
+            style="@android:style/Widget.Holo.Light.ProgressBar.Horizontal"
+            android:layout_below="@+id/currentImage" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/currentImage"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/levelText"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:text="Level 1"
+            android:layout_above="@+id/steakTextBorder" />
+
+        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-4179709266227495/6461801972">
+        </com.google.android.gms.ads.AdView>
+    </RelativeLayout>
+</LinearLayout>

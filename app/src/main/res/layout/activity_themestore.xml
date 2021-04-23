@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/themeStoreBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/feltbackground">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/feltborder"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="33dp"
+                android:layout_marginStart="33dp"
+                android:layout_marginTop="33dp"
+                android:background="@drawable/themefelt" />
+
+            <Button
+                android:id="@+id/feltButton"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="33dp"
+                android:layout_marginStart="33dp"
+                android:layout_marginTop="33dp"
+                android:background="@drawable/border" />
+
+            <TextView
+                android:id="@+id/feltLabel"
+                android:layout_width="125dp"
+                android:layout_height="50dp"
+                android:layout_alignLeft="@+id/feltButton"
+                android:layout_alignStart="@+id/feltButton"
+                android:layout_below="@+id/feltButton"
+                android:layout_marginTop="12dp"
+                android:background="#70ffffff"
+                android:gravity="center"
+                android:text="Felt\n0 points"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/woodborder"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/feltButton"
+                android:layout_marginEnd="41dp"
+                android:layout_marginRight="41dp"
+                android:background="#000000" />
+
+            <Button
+                android:id="@+id/woodButton"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/feltButton"
+                android:layout_marginEnd="41dp"
+                android:layout_marginRight="41dp"
+                android:background="@drawable/border" />
+
+            <TextView
+                android:id="@+id/woodLabel"
+                android:layout_width="125dp"
+                android:layout_height="50dp"
+                android:layout_alignBaseline="@+id/feltLabel"
+                android:layout_alignBottom="@+id/feltLabel"
+                android:layout_alignLeft="@+id/woodButton"
+                android:layout_alignStart="@+id/woodButton"
+                android:background="#70ffffff"
+                android:gravity="center"
+                android:text="Wood\n3000 points"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/metalborder"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_alignLeft="@+id/feltLabel"
+                android:layout_alignStart="@+id/feltLabel"
+                android:layout_below="@+id/feltLabel"
+                android:layout_marginTop="32dp"
+                android:background="#000000" />
+
+            <Button
+                android:id="@+id/metalbutton"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_alignLeft="@+id/feltLabel"
+                android:layout_alignStart="@+id/feltLabel"
+                android:layout_below="@+id/feltLabel"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/border" />
+
+            <TextView
+                android:id="@+id/metallabel"
+                android:layout_width="125dp"
+                android:layout_height="50dp"
+                android:layout_alignLeft="@+id/metalborder"
+                android:layout_alignStart="@+id/metalborder"
+                android:layout_below="@+id/metalborder"
+                android:layout_marginTop="14dp"
+                android:background="#70ffffff"
+                android:gravity="center"
+                android:text="Metal\n6000 points"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/beachborder"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_alignBaseline="@+id/metalborder"
+                android:layout_alignBottom="@+id/metalborder"
+                android:layout_alignLeft="@+id/woodLabel"
+                android:layout_alignStart="@+id/woodLabel"
+                android:background="#000000" />
+
+            <Button
+                android:id="@+id/beachbutton"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_alignBaseline="@+id/metalborder"
+                android:layout_alignBottom="@+id/metalborder"
+                android:layout_alignLeft="@+id/woodLabel"
+                android:layout_alignStart="@+id/woodLabel"
+                android:background="@drawable/border" />
+
+            <TextView
+                android:id="@+id/beachlabel"
+                android:layout_width="125dp"
+                android:layout_height="50dp"
+                android:layout_alignBaseline="@+id/metallabel"
+                android:layout_alignBottom="@+id/metallabel"
+                android:layout_alignLeft="@+id/beachborder"
+                android:layout_alignStart="@+id/beachborder"
+                android:background="#70ffffff"
+                android:gravity="center"
+                android:text="Beach\n9000 points"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/rockborder"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_alignLeft="@+id/metallabel"
+                android:layout_alignStart="@+id/metallabel"
+                android:layout_below="@+id/metallabel"
+                android:layout_marginTop="25dp"
+                android:background="#000000" />
+
+            <Button
+                android:id="@+id/rockbutton"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_alignBaseline="@+id/rockborder"
+                android:layout_alignBottom="@+id/rockborder"
+                android:layout_alignLeft="@+id/rockborder"
+                android:layout_alignStart="@+id/rockborder"
+                android:background="@drawable/border" />
+
+            <TextView
+                android:layout_width="125dp"
+                android:layout_height="50dp"
+                android:layout_alignLeft="@+id/rockbutton"
+                android:layout_alignStart="@+id/rockbutton"
+                android:layout_below="@+id/rockborder"
+                android:layout_marginTop="21dp"
+                android:background="#70ffffff"
+                android:gravity="center"
+                android:text="Arid\n12000 points"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:id="@+id/textView" />
+
+            <Button
+                android:id="@+id/goldborder"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_alignBaseline="@+id/rockborder"
+                android:layout_alignBottom="@+id/rockborder"
+                android:layout_alignLeft="@+id/beachlabel"
+                android:layout_alignStart="@+id/beachlabel"
+                android:background="#000000" />
+            <Button
+                android:id="@+id/goldbutton"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_alignBaseline="@+id/goldborder"
+                android:layout_alignBottom="@+id/goldborder"
+                android:layout_alignLeft="@+id/goldborder"
+                android:layout_alignStart="@+id/goldborder"
+                android:background="@drawable/border" />
+            <TextView
+                android:layout_width="125dp"
+                android:layout_height="50dp"
+                android:background="#70ffffff"
+                android:gravity="center"
+                android:text="Gold\n15000 points"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:id="@+id/textView4"
+                android:layout_alignBaseline="@+id/textView"
+                android:layout_alignBottom="@+id/textView"
+                android:layout_alignLeft="@+id/goldborder"
+                android:layout_alignStart="@+id/goldborder" />
+
+            <Button
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:id="@+id/digitalborder"
+                android:background="#000000"
+                android:layout_marginTop="30dp"
+                android:layout_below="@+id/textView"
+                android:layout_alignLeft="@+id/textView"
+                android:layout_alignStart="@+id/textView" />
+            <Button
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:id="@+id/digitalbutton"
+                android:background="@drawable/border"
+                android:layout_marginTop="30dp"
+                android:layout_below="@+id/textView"
+                android:layout_alignLeft="@+id/textView"
+                android:layout_alignStart="@+id/textView" />
+            <TextView
+                android:layout_width="125dp"
+                android:layout_height="50dp"
+                android:background="#70ffffff"
+                android:gravity="center"
+                android:id="@+id/digitallabel"
+                android:text="Digital\n18000 points"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_below="@+id/digitalborder"
+                android:layout_alignLeft="@+id/digitalborder"
+                android:layout_alignStart="@+id/digitalborder"
+                android:layout_marginTop="17dp" />
+
+            <Button
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:id="@+id/jokerborder"
+                android:background="#000000"
+                android:layout_alignBaseline="@+id/digitalborder"
+                android:layout_alignBottom="@+id/digitalborder"
+                android:layout_alignLeft="@+id/textView4"
+                android:layout_alignStart="@+id/textView4" />
+            <Button
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:id="@+id/jokerbutton"
+                android:background="@drawable/border"
+                android:layout_alignBaseline="@+id/jokerborder"
+                android:layout_alignBottom="@+id/jokerborder"
+                android:layout_alignLeft="@+id/jokerborder"
+                android:layout_alignStart="@+id/jokerborder" />
+            <TextView
+                android:layout_width="125dp"
+                android:layout_height="50dp"
+                android:background="#70ffffff"
+                android:gravity="center"
+                android:text=" ??? \n21000 points"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_alignParentBottom="true"
+                android:layout_alignLeft="@+id/jokerborder"
+                android:layout_alignStart="@+id/jokerborder" />
+        </RelativeLayout>
+    </ScrollView>
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/digitallabel"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-4179709266227495/6461801972">
+    </com.google.android.gms.ads.AdView>
+</LinearLayout>
